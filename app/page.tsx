@@ -168,9 +168,6 @@ export default function App() {
               >
                 Event Horizon
               </h2>
-              <h6 className="text-center my-4">
-                (Exact Dates To Be Announced)
-              </h6>
               <h3 className="my-6 text-center font-semibold text-purple-300 text-lg">
                 Beyond Bits is a Qiskit Fall Fest 2024 Extension Event being
                 organized by PES University Electronic City Campus. <br />
@@ -183,34 +180,22 @@ export default function App() {
                 insightful lectures, and a hackathon to foster innovation and
                 encourage students to embark on their quantum computing journey.
               </h3>
-              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
                 {[
                   {
-                    time: "Starting October, 2024",
-                    title: "Quantum Computing Workshops",
+                    time: "22nd October, 2024",
+                    title: "Quantum Computing 101 Workshop",
                     description:
-                      "Dive into the quantum realm and get hands-on experience with Qiskit through 2 workshops",
+                      "Dive into the quantum realm and get hands-on experience with Qiskit through an introductory workshop",
                     details: [
                       "Introduction to Quantum Computing",
                       "Entanglement Exploration",
-                      "Quantum Algorithm Mastery",
-                      "Error Correction Techniques",
+                      "Quantum Algorithms Applications",
+                      "Qiskit Programming Basics",
                     ],
                   },
                   {
-                    time: "November, 2024",
-                    title: "Quantum Horizons Lecture",
-                    description:
-                      "Glimpse into the future and receive invaluable guidance from quantum computing industry insiders",
-                    details: [
-                      "Application Domains for Quantum",
-                      "Quantum Supremacy Insights",
-                      "Careers in Quantum Computing",
-                      "Interactive Q&A Session",
-                    ],
-                  },
-                  {
-                    time: "November, 2024",
+                    time: "14th - 24th November, 2024",
                     title: "Beyond Bits Hackathon",
                     description:
                       "Forge quantum solutions in a series of coding challenges provided by IBM Qiskit",
@@ -218,7 +203,7 @@ export default function App() {
                       "Apply Qiskit knowledge",
                       "Explore new use cases",
                       "Build quantum circuit programming skills",
-                      "Earn certificates and prizes",
+                      "Earn certificates",
                     ],
                   },
                 ].map((event, index) => (
@@ -241,6 +226,15 @@ export default function App() {
                     </ul>
                   </motion.div>
                 ))}
+              </div>
+              <div className="mt-12 flex justify-center items-center w-full">
+                <Image
+                  src="/event.jpeg"
+                  alt="Event Picture"
+                  width={800}
+                  height={600}
+                  className="w-full max-w-4xl h-auto rounded-lg shadow-2xl"
+                />
               </div>
             </div>
           </section>
@@ -318,8 +312,8 @@ export default function App() {
                     Quantumania - PESU ECC&apos;s Quantum Club
                   </h3>
                   <p className="text-gray-300 mb-4">
-                    Igniting students&apos; curiosity through introductory sessions,
-                    innovative workshops and collaborative projects.
+                    Igniting students&apos; curiosity through introductory
+                    sessions, innovative workshops and collaborative projects.
                   </p>
                   <Link
                     href="https://quanad.pes.edu/club"
@@ -371,7 +365,12 @@ export default function App() {
             <p>&copy; 2024 Qiskit Fall Fest - PES University ECC</p>
             <p>
               Contact us at:{" "}
-              <a href="mailto:quantumania.ec@pes.edu" className="text-purple-300">quantumania.ec@pes.edu</a>
+              <a
+                href="mailto:quantumania.ec@pes.edu"
+                className="text-purple-300"
+              >
+                quantumania.ec@pes.edu
+              </a>
             </p>
           </div>
         </footer>
