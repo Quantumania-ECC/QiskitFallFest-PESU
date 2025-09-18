@@ -371,7 +371,7 @@ export default function QiskitFallFest2024() {
 
         <footer className="bg-black bg-opacity-50 py-6">
           <div className="container mx-auto px-4 text-center">
-            <p>&copy; 2024 Qiskit Fall Fest - PES University ECC</p>
+            <p>2024 Qiskit Fall Fest - PES University ECC</p>
             <p>
               Contact us at:{" "}
               <a

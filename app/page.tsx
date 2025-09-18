@@ -189,9 +189,10 @@ export default function App() {
                 annually across the globe, featuring quantum computing and IBM
                 Quantum&apos;s Qiskit programming language. <br />
                 <br />
-                Join us at Beyond Bits for comprehensive quantum computing education
-                featuring guest lectures, hands-on workshops, and an exciting hackathon
-                to inspire the next generation of quantum computing enthusiasts.
+                Join us at Beyond Bits for comprehensive quantum computing
+                education featuring guest lectures, hands-on workshops, and an
+                exciting hackathon to inspire the next generation of quantum
+                computing enthusiasts.
               </h3>
               <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-3">
                 {[
@@ -256,7 +257,7 @@ export default function App() {
                   </motion.div>
                 ))}
               </div>
-              
+
               {/* Event Objectives */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -264,34 +265,37 @@ export default function App() {
                 transition={{ delay: 0.5 }}
                 className="mt-16 bg-gradient-to-r from-blue-50 to-purple-50 bg-opacity-80 p-8 rounded-xl shadow-lg"
               >
-                <h3 className="text-3xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                <h3 className="text-3xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                   Event Objectives
                 </h3>
-                <p className="text-gray-700 text-lg leading-relaxed text-center max-w-4xl mx-auto">
-                  The primary objective of Beyond Bits is to provide students with a comprehensive 
-                  introduction to quantum computing, combining theoretical knowledge with practical experience. 
-                  By the end of the event, participants will have foundational understanding of quantum computing, 
-                  hands-on exposure to the Qiskit SDK, and the opportunity to apply their skills in a 
-                  real-world hackathon setting with mentorship from industry experts and Qiskit Advocates.
-                </p>
+                <div className="flex flex-col lg:flex-row items-center gap-8">
+                  <div className="lg:w-1/2">
+                    <Image
+                      src="/2025/Simplified_Illustration.png"
+                      alt="Beyond Bits 2025"
+                      width={600}
+                      height={450}
+                      className="w-full h-auto rounded-lg shadow-xl"
+                    />
+                  </div>
+                  <div className="lg:w-1/2">
+                    <p className="text-gray-700 text-lg leading-relaxed">
+                      The primary objective of Beyond Bits is to provide students
+                      with a comprehensive introduction to quantum computing,
+                      combining theoretical knowledge with practical experience. By
+                      the end of the event, participants will have foundational
+                      understanding of quantum computing, hands-on exposure to the
+                      Qiskit SDK, and the opportunity to apply their skills in a
+                      real-world hackathon setting with mentorship from industry
+                      experts and Qiskit Advocates.
+                    </p>
+                  </div>
+                </div>
               </motion.div>
-              
-              <div className="mt-12 flex justify-center items-center w-full">
-                <Image
-                  src="/2025/Simplified_Illustration.png"
-                  alt="Beyond Bits 2025"
-                  width={800}
-                  height={600}
-                  className="w-full max-w-4xl h-auto rounded-lg shadow-2xl"
-                />
-              </div>
             </div>
           </section>
 
-          <section
-            id="partners"
-            className="py-10 bg-white bg-opacity-40 px-4"
-          >
+          <section id="partners" className="py-10 bg-white bg-opacity-40 px-4">
             <div className="container mx-auto">
               <h2
                 className="text-5xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600"
@@ -443,7 +447,7 @@ export default function App() {
 
         <footer className="bg-gray-800 bg-opacity-90 py-6">
           <div className="container mx-auto px-4 text-center text-white">
-            <p>&copy; 2025 Qiskit Fall Fest - PES University ECC</p>
+            <p>2025 Qiskit Fall Fest Extension Event - PES University ECC</p>
             <p>
               Contact us at:{" "}
               <a href="mailto:quantumania.ec@pes.edu" className="text-blue-300">
