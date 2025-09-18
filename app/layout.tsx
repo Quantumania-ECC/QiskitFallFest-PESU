@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "PESU Qiskit Fall Fest 2024",
+  title: "PESU Qiskit Fall Fest 2025",
   description:
     "The Qiskit Fall Fest extension event being organized by the Quantumania club at PESU ECC, Bangalore",
 };
