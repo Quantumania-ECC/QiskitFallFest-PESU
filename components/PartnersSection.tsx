@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function PartnersSection() {
   const sponsors = [
-    { name: "IBM Qiskit", logo: "/2025/IBM Quantum Logo.png" },
+    { name: "IBM Qiskit", logo: "/2025/ibm_q.png" },
     { name: "PES University", logo: "/pes.jpg" },
   ];
 
@@ -27,7 +27,7 @@ export default function PartnersSection() {
               transition={{ delay: index * 0.1 }}
               className="bg-white bg-opacity-70 p-6 rounded-lg backdrop-blur-sm flex flex-col items-center justify-center hover:bg-opacity-80 transition-all duration-300 shadow-lg"
             >
-              <Image src={sponsor.logo} alt={sponsor.name} width={400} height={400} className="mb-4 object-contain" />
+              <Image src={sponsor.logo} alt={sponsor.name} width={400} height={400} className="mb-4 object-fit" />
               <h3 className="text-2xl font-semibold text-gray-800" style={{ fontFamily: "'Rajdhani', sans-serif" }}>
                 {sponsor.name}
               </h3>
