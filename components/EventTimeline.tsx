@@ -5,7 +5,6 @@ const EventTimeline = () => {
     { time: 'Nov 7', title: 'Qiskit & Quantum 101 (Online)', description: 'Janani A, Quantum Support Engineer, IBM Quantum' },
     { time: 'Nov 8', title: 'Advanced Qiskit & Quantum 101 (Online)', description: 'Kavitha Yogaraj, Senior Quantum Computational Scientist, IBM Quantum' },
     { time: 'Nov 10', title: 'QML Session + Hackathon Kickoff (Online)', description: 'Dr. Anupama Ray, Senior Research Scientist, IBM Quantum' },
-    { time: 'Nov 12', title: 'Quantum Algorithms (Online) ', description: 'Dr. Jnan Yalla, Quantum Machine Learning Researcher, DataTeach.ai' },
     { time: 'Nov 15', title: 'Hackathon Finale (Offline)', description: 'Present your projects, compete, and celebrate the spirit of quantum innovation!' },
   ];
 
