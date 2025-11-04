@@ -49,7 +49,7 @@ export default function HeroSection({ onExploreSchedule }: HeroProps) {
           >
             Explore Schedule
           </Button>
-          <Link href="https://forms.gle/aZx7QwmFeFUDpWbA6">
+          <Link href="https://forms.gle/aZx7QwmFeFUDpWbA6" target="_blank" rel="noopener noreferrer">
             <Button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition-colors text-lg">
               Register Now
             </Button>

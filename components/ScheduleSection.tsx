@@ -7,39 +7,39 @@ import EventTimeline from "@/components/EventTimeline";
 export default function ScheduleSection() {
   const events = [
     {
-      time: "Kickoff Event",
-      title: "Guest Lectures & Inaugural Session",
+      time: "Nov 7 - Nov 10",
+      title: "Online Lectures & Workshops",
       description:
-        "Expert speakers from academia, industry, and IBM Quantum ecosystem sharing insights on quantum computing's transformative potential",
+        "A series of online sessions designed to introduce participants to the world of quantum computing with foundational understanding and practical experience.",
       details: [
-        "Overview of quantum computing landscape",
-        "Applications in healthcare, finance & AI",
-        "Interactive Q&A with experts",
-        "Inspiration for quantum journey",
+        "Quantum mechanics fundamentals",
+        "Quantum algorithms & Qiskit framework",
+        "Programming techniques & workflows",
+        "Hands-on experience with quantum concepts",
       ],
     },
     {
-      time: "November 7th (Tentative)",
-      title: "Quantum & Qiskit 101 Workshop",
+      time: "Nov 10 - Nov 15",
+      title: "5-Day Online Hackathon",
       description:
-        "Foundational workshop introducing quantum computing fundamentals and hands-on Qiskit programming",
+        "Teams of 3 tackle problem statements given by Qiskit in an intensive online hackathon format with expert mentorship.",
       details: [
-        "Quantum theory basics",
-        "Quantum circuits fundamentals",
-        "Qiskit SDK hands-on experience",
-        "Access to IBM Quantum hardware",
+        "Kickoff on Nov 10th",
+        "Teams of 3 participants",
+        "Qiskit problem statements",
+        "Mentorship from Qiskit Advocates",
       ],
     },
     {
-      time: "November 14th-15th (Tentative)",
-      title: "Qiskit Fall Fest Hackathon",
+      time: "November 15th",
+      title: "In-Person Project Presentation & Finale",
       description:
-        "16-hour hackathon where teams solve quantum computing challenges with mentorship from Qiskit Advocates",
+        "The final day features 5-6 hours of in-person presentations where top teams present their solutions to judges and winners are announced.",
       details: [
-        "Teams of 2-4 participants",
-        "Mentorship from experts",
-        "Real-world problem statements",
-        "Certificates & prizes for winners",
+        "Offline presentation at PESU ECC",
+        "Top teams present to judges",
+        "Live demonstrations & Q&A",
+        "Winners announced & prizes awarded",
       ],
     },
   ];
@@ -53,17 +53,29 @@ export default function ScheduleSection() {
         >
           Event Horizon
         </h2>
-        <h3 className="my-6 text-center font-semibold text-gray-700 text-lg">
-          Beyond Bits is a Qiskit Fall Fest 2025 Extension Event being organized by PES University Electronic City Campus.
-          <br />
-          <br />
-          Qiskit Fall Fest is a series of student-led events conducted annually across the globe, featuring quantum computing and IBM
-          Quantum&apos;s Qiskit programming language.
-          <br />
-          <br />
-          Join us at Beyond Bits for comprehensive quantum computing education featuring guest lectures, hands-on workshops, and an
-          exciting hackathon to inspire the next generation of quantum computing enthusiasts.
-        </h3>
+        <div className="my-8 text-center max-w-4xl mx-auto">
+          <p className="text-gray-700 text-lg mb-6">
+            Beyond Bits is a Qiskit Fall Fest 2025 Extension Event at PES University Electronic City Campus.
+          </p>
+          
+          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md space-y-4 text-left">
+            <h4 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 text-center mb-4">
+              Event Structure
+            </h4>
+            
+            <div className="space-y-3">
+              <p className="text-gray-700">
+                <span className="font-bold text-blue-600">Part 1:</span> Online lectures and workshops (Nov 7-10) introducing quantum computing fundamentals, 
+                quantum algorithms, and the Qiskit framework with hands-on programming experience.
+              </p>
+              
+              <p className="text-gray-700">
+                <span className="font-bold text-purple-600">Part 2:</span> 5-day online hackathon (Nov 10-15) in teams of 3, tackling Qiskit problem statements, 
+                culminating in an in-person finale on Nov 15th where top teams present solutions to judges.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-3">
           {events.map((event, index) => (
@@ -76,10 +88,15 @@ export default function ScheduleSection() {
             >
               <h3 className="text-2xl font-bold mb-2 text-gray-800">{event.title}</h3>
               <p className="text-blue-600 mb-2 font-semibold">{event.time}</p>
-              <p className="text-gray-600 mb-4 font-semibold">{event.description}</p>
-              <ul className="list-disc list-inside font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+              <p className="text-gray-600 mb-2 font-semibold">{event.description}</p>
+              <ul className="space-y-1">
                 {event.details.map((detail, i) => (
-                  <li key={i}>{detail}</li>
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="text-blue-600 text-lg mt-0.5">•</span>
+                    <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                      {detail}
+                    </span>
+                  </li>
                 ))}
               </ul>
             </motion.div>
@@ -109,9 +126,10 @@ export default function ScheduleSection() {
             <div className="lg:w-1/2">
               <p className="text-gray-700 text-lg leading-relaxed">
                 The primary objective of Beyond Bits is to provide students with a comprehensive introduction to quantum computing,
-                combining theoretical knowledge with practical experience. By the end of the event, participants will have foundational
-                understanding of quantum computing, hands-on exposure to the Qiskit SDK, and the opportunity to apply their skills in a
-                real-world hackathon setting with mentorship from industry experts and Qiskit Advocates.
+                combining theoretical knowledge with practical experience. Participants will gain foundational understanding through 
+                expert-led online sessions, followed by hands-on application in a competitive hackathon environment. The event culminates 
+                in an exciting in-person finale where top teams showcase their quantum computing solutions, compete for prizes, and 
+                celebrate the spirit of quantum innovation with mentorship from industry experts and Qiskit Advocates.
               </p>
             </div>
           </div>

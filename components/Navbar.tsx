@@ -65,6 +65,13 @@ export default function Navbar({
             <li>
               <EditionDropdown currentYear="2025" textColor="text-gray-700" />
             </li>
+            <li>
+              <Link href="https://forms.gle/aZx7QwmFeFUDpWbA6" target="_blank" rel="noopener noreferrer">
+                <button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-2 px-5 rounded-full transition-all duration-300 text-sm shadow-md hover:shadow-lg">
+                  Register
+                </button>
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>
@@ -97,6 +104,13 @@ export default function Navbar({
                   currentYear="2025"
                   textColor="text-gray-700"
                 />
+              </li>
+              <li className="pt-4">
+                <Link href="https://forms.gle/aZx7QwmFeFUDpWbA6" target="_blank" rel="noopener noreferrer">
+                  <button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-md hover:shadow-lg">
+                    Register Now
+                  </button>
+                </Link>
               </li>
             </ul>
           </motion.div>
